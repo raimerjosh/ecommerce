@@ -117,33 +117,104 @@
 .cartItems {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
-  width: 50%;
-  justify-content: center;
+  min-width: 30%;
 }
 
 
 .cartItem {
   display: flex;
-  max-height: 100px;
-  background-color: #59ce8f;
+  background-color: hsl(7, 94%, 63%);
   border-radius: 10px;
 }
 
 .cartItem p {
-  flex-grow: 2;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  font-weight: lighter;
+  font-weight: medium;
+  margin: 0px;
 }
 
 .cartItem img {
   height: auto;
   max-width: 100px;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
+  flex-grow: 1;
 }
 
 .cartItemDescription {
-  flex-grow: 1;
-  min-width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 50%;
 }
+
+.cartDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.countHandler {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 25%;
+}
+
+.countHandler input {
+  max-width: 50%;
+  text-align: center;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkout p  {
+  text-align: center;
+}
+
+.continueShopping {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  touch-action: manipulation;
+  font-family: "Poppins", sans-serif;
+}
+
+.continueShopping:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#checkout {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  touch-action: manipulation;
+  font-family: "Poppins", sans-serif;
+}
+
+#checkout:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
